@@ -1,11 +1,37 @@
+# RevStream – Frontend
 
-  # Design System Foundations
+React + TypeScript + Vite app cho SME Portal và Investor Portal của RevStream Capital.
 
-  This is a code bundle for Design System Foundations. The original project is available at https://www.figma.com/design/IT5hYnE1Q5AfE1EMkyLFWn/Design-System-Foundations.
+## Setup
 
-  ## Running the code
+```bash
+pnpm install
+pnpm dev      # dev server tại localhost:5173
+pnpm build    # build production → dist/
+```
 
-  Run `npm i` to install the dependencies.
+## Cấu trúc
 
-  Run `npm run dev` to start the development server.
-  
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── ui/          # shadcn/ui components
+│   │   └── DashboardLayout.tsx
+│   ├── pages/
+│   │   ├── Dashboard.tsx
+│   │   ├── RevenueHealth.tsx
+│   │   ├── Facility.tsx
+│   │   ├── Documents.tsx
+│   │   ├── Repayment.tsx
+│   │   ├── Notifications.tsx
+│   │   ├── UploadFlow.tsx
+│   │   └── upload/      # Step1 → Step4
+│   └── routes.tsx
+├── styles/
+└── main.tsx
+```
+
+## Deploy
+
+Push lên `main` → GitHub Actions tự build và deploy lên GitHub Pages.
