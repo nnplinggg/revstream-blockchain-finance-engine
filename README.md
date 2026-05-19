@@ -8,7 +8,7 @@
 
 ## Tổng quan
 
-RevStream Capital kết nối B2B service SMEs với nhà đầu tư tổ chức thông qua quyền nhận dòng tiền được tokenize. Dragon Capital ($5B AUM) giữ junior tranche, chịu tổn thất đầu tiên, và quản lý rủi ro pool tổng thể.
+RevStream Capital kết nối B2B service SMEs với nhà đầu tư tổ chức thông qua quyền nhận dòng tiền được tokenize. X Capital ($5B AUM) giữ junior tranche, chịu tổn thất đầu tiên, và quản lý rủi ro pool tổng thể.
 
 **Vấn đề cần giải quyết:** B2B service SMEs tại Việt Nam (IT outsourcing, digital agency, kế toán, pháp lý, HR) có receivable ổn định từ corporate clients lớn nhưng không tiếp cận được tín dụng ngân hàng. Các fintech hiện tại tính 18-24% APR với quy trình thẩm định từng invoice riêng lẻ, không scale được.
 
@@ -43,7 +43,7 @@ Prototype bao gồm **SME Portal** và **Investor Portal**.
 |---|---|---|---|
 | Senior | 65% | 9.5% | Tổ chức (bảo hiểm, quỹ hưu trí) |
 | Mezzanine | 20% | 14% | HNWI (từ Q4 2027) |
-| Junior | 15% | Target 20% IRR | Dragon Capital + HNWI chọn lọc |
+| Junior | 15% | Target 20% IRR | X Capital + HNWI chọn lọc |
 
 ---
 
@@ -101,19 +101,21 @@ Blockchain không phải sản phẩm — là hạ tầng back-end. SME không b
 | Contract | Chức năng |
 |---|---|
 | `RevStreamToken.sol` | ERC-1400 token. Ba partition: `SENIOR`, `MEZZANINE`, `JUNIOR`. Transfer restriction qua whitelist registry. |
-| `WhitelistRegistry.sol` | Quản lý địa chỉ ví nhà đầu tư được phép. Chỉ admin Dragon Capital thêm/xóa. |
+| `WhitelistRegistry.sol` | Quản lý địa chỉ ví nhà đầu tư được phép. Chỉ admin X Capital thêm/xóa. |
 | `WaterfallController.sol` | Nhận USDC từ settlement, thực thi phân phối theo thứ tự: Senior → Mezzanine → Junior. |
 | `InvoiceRegistry.sol` | On-chain record mỗi invoice: hash PDF (IPFS), giá trị, hash obligor, due date, trạng thái. |
 | `PoolLedger.sol` | Theo dõi pool state: receivable outstanding, tranche balances, phân phối tích lũy. |
 
-### Luồng Settlement
+### Luồng Settlement & Xử lý FX
+
+SME và corporate client giao dịch hoàn toàn bằng **VND** — không tiếp xúc với USDC hay blockchain. USDC chỉ là medium of settlement on-chain vì Polygon không có VND stablecoin. Rủi ro FX (VND → USDC) được platform hedge ở cấp pool, chi phí (~20–40bps/năm) hấp thụ vào servicing fee 1%/năm — không tính thêm vào invoice của SME.
 
 ```
-Corporate client thanh toán vào virtual account
+Corporate client thanh toán VND → virtual account (ngân hàng đối tác)
         ↓
-Webhook ngân hàng đối tác (< 15 phút)
+Webhook ngân hàng (< 15 phút)
         ↓
-Ops team chuyển đổi sang USDC (Phase 1 thủ công, Phase 2 tự động)
+Platform đổi VND → USDC tại spot rate, hedge FX ở cấp pool
         ↓
 USDC gửi đến WaterfallController.sol
         ↓
@@ -159,7 +161,7 @@ Chỉ triển khai khi đủ: 200+ SME-tháng dữ liệu + 20+ default event qu
 
 ## Structural Receivable Lock
 
-Receivable của SME được chuyển nhượng hợp pháp sang SPV do Dragon Capital kiểm soát theo BLDS Điều 365–371 — chuyển nhượng hoàn toàn, không phải cầm cố. Nếu SME mất khả năng thanh toán, Dragon Capital thu hồi thẳng từ corporate client.
+Receivable của SME được chuyển nhượng hợp pháp sang SPV do X Capital kiểm soát theo BLDS Điều 365–371 — chuyển nhượng hoàn toàn, không phải cầm cố. Nếu SME mất khả năng thanh toán, X Capital thu hồi thẳng từ corporate client.
 
 Triển khai theo 3 giai đoạn để giảm ma sát onboarding:
 

@@ -148,9 +148,11 @@ Invoice tự động duyệt khi thoả hết:
 
 SLA: dưới 2 giờ (P95). Nếu không thoả → chuyển thủ công 24 giờ.
 
-### Blockchain Settlement (Back-end, SME không thấy)
+### Blockchain Settlement & FX (Back-end, SME không thấy)
 
-Waterfall phân phối tự động qua smart contract: Senior → Mezzanine → Junior. Lịch sử on-chain trên Polygon, nhà đầu tư tự xác minh trên Polygonscan.
+SME và corporate client chỉ làm việc với **VND**. Platform chuyển đổi VND → USDC khi route lên blockchain — rủi ro tỷ giá được hedge ở cấp pool, chi phí (~20–40bps/năm) baked vào servicing fee, không phát sinh thêm cho SME.
+
+Waterfall phân phối tự động qua smart contract: Senior → Mezzanine → Junior. Lịch sử on-chain trên Polygon, nhà đầu tư tự xác minh trên Polygonscan mà không cần tin vào báo cáo platform.
 
 ---
 
@@ -184,7 +186,7 @@ Yield 9.5% có tài sản cơ sở là receivable từ FPT, VNG, Techcombank —
 > 1. Revenue Coverage Ratio 1.3x khi vào pool
 > 2. Performance adjustment tự động khi SME yếu
 > 3. Reserve account 3–5%
-> 4. Junior tranche 15% first-loss (Dragon Capital chịu trước)
+> 4. Junior tranche 15% first-loss (X Capital chịu trước)
 
 ### Slide: Traction / Roadmap
 > 2026: Foundation + pilot 2–3 SMEs | 2027: Pool 1 ($4M, 15 SMEs) | 2028: 3 pools $13.5M | 2030: $50M, 80–100 SMEs

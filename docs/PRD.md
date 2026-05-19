@@ -31,7 +31,7 @@
 
 ## **1\. Tổng quan sản phẩm**
 
-RevStream Capital là hạ tầng tokenization receivable financing, kết nối B2B service SMEs với nhà đầu tư tổ chức thông qua quyền nhận dòng tiền được tokenize. Dragon Capital ($5B AUM) giữ junior tranche, chịu tổn thất đầu tiên, và quản lý rủi ro pool tổng thể.
+RevStream Capital là hạ tầng tokenization receivable financing, kết nối B2B service SMEs với nhà đầu tư tổ chức thông qua quyền nhận dòng tiền được tokenize. X Capital ($5B AUM) giữ junior tranche, chịu tổn thất đầu tiên, và quản lý rủi ro pool tổng thể.
 
 Sản phẩm lấp đầy một khoảng trống thực tế: B2B service SMEs tại Việt Nam có receivable ổn định từ corporate clients lớn nhưng không tiếp cận được tín dụng ngân hàng (thiếu tài sản thế chấp cố định) và không đủ điều kiện phát hành trái phiếu hay cổ phiếu (quy mô quá nhỏ, chưa có rating). Các fintech cho vay hiện tại (Validus, Funding Societies) tính 18-24% APR với quy trình thẩm định từng invoice riêng lẻ, không scale được.
 
@@ -67,7 +67,7 @@ Senior tranche yield 9.5% có tài sản cơ sở là receivable từ các oblig
 
 ### **Ràng buộc pháp lý**
 
-Luật Việt Nam cấm quỹ đầu tư cho vay trực tiếp. Dragon Capital chỉ được đầu tư qua chứng khoán hoặc tài sản đủ điều kiện khác. SMEs không đủ điều kiện phát hành cổ phiếu hay trái phiếu. Tokenize quyền nhận dòng tiền từ receivable tạo công cụ đủ điều kiện, giải quyết ràng buộc này.
+Luật Việt Nam cấm quỹ đầu tư cho vay trực tiếp. X Capital chỉ được đầu tư qua chứng khoán hoặc tài sản đủ điều kiện khác. SMEs không đủ điều kiện phát hành cổ phiếu hay trái phiếu. Tokenize quyền nhận dòng tiền từ receivable tạo công cụ đủ điều kiện, giải quyết ràng buộc này.
 
 ---
 
@@ -105,7 +105,7 @@ Luật Việt Nam cấm quỹ đầu tư cho vay trực tiếp. Dragon Capital c
 * Ticket size: $500K-$2M  
 * Nhu cầu: thu nhập cố định với tài sản cơ sở minh bạch, báo cáo hàng quý, audit trail on-chain  
 * Tiêu chí quyết định: chất lượng obligor, hiệu lực pháp lý của assignment, lịch sử default  
-* Kênh tiếp cận: mạng lưới quan hệ sẵn có của Dragon Capital (70% AUM là institutional)
+* Kênh tiếp cận: mạng lưới quan hệ sẵn có của X Capital (70% AUM là institutional)
 
 ### **3.3 HNWI (Mezzanine & phần Junior, từ Q4 2027\)**
 
@@ -113,7 +113,7 @@ Luật Việt Nam cấm quỹ đầu tư cho vay trực tiếp. Dragon Capital c
 * Ticket size: $100K-$500K  
 * Nhu cầu: yield cao hơn tiền gửi, có thanh khoản qua secondary market từ 2029  
 * Tiêu chí quyết định: đa dạng hóa danh mục, track record pool 1  
-* Lưu ý: Junior tranche \- Dragon Capital giữ 5-10%, phần còn lại là HNWI được chọn lọc, tối đa 25 nhà đầu tư/pool
+* Lưu ý: Junior tranche \- X Capital giữ 5-10%, phần còn lại là HNWI được chọn lọc, tối đa 25 nhà đầu tư/pool
 
 ### **3.4 Retail (từ 2029, gián tiếp)**
 
@@ -127,7 +127,7 @@ Luật Việt Nam cấm quỹ đầu tư cho vay trực tiếp. Dragon Capital c
 * Cần giảm thiểu: gánh nặng tuân thủ, phức tạp ERP, xáo trộn quan hệ với nhà cung cấp (SME)  
 * Mục tiêu: pre-sign 15 master vendor agreements trước khi Pool 1 launch (Q3-Q4 2026\)
 
-### **3.6 Đội ngũ vận hành nội bộ (Dragon Capital)**
+### **3.6 Đội ngũ vận hành nội bộ (X Capital)**
 
 * Chuyên viên tín dụng: thẩm định facility, đặt hạn mức, giám sát liên tục  
 * Vận hành: đối soát virtual account, xử lý ngoại lệ, báo cáo nhà đầu tư  
@@ -236,9 +236,9 @@ Chi phí quy đổi hàng năm: 15-22% APR trên drawn balance trung bình. Cạ
 | ----- | ----- | ----- | ----- | ----- |
 | Senior | 65% | 9.5% (floor 8%) | Tổ chức (bảo hiểm, quỹ hưu trí, family office) | 24 tháng |
 | Mezzanine | 20% | 14% | HNWI từ Q4 2027 | 18 tháng |
-| Junior | 15% | Target 20% IRR, không floor | Dragon Capital 5-10% \+ HNWI chọn lọc (tối đa 25/pool) | 24 tháng |
+| Junior | 15% | Target 20% IRR, không floor | X Capital 5-10% \+ HNWI chọn lọc (tối đa 25/pool) | 24 tháng |
 
-Pool 1 (2027): chỉ mở Senior cho institutional và Junior cho Dragon Capital. Mezzanine mở cho HNWI sau Q3 2027 khi Pool 1 có 6 tháng track record. Retail access từ 2029 qua DCDS mutual fund wrapper, không phải direct investment.
+Pool 1 (2027): chỉ mở Senior cho institutional và Junior cho X Capital. Mezzanine mở cho HNWI sau Q3 2027 khi Pool 1 có 6 tháng track record. Retail access từ 2029 qua DCDS mutual fund wrapper, không phải direct investment.
 
 ### **5.5 Giới hạn tập trung (Concentration Limits)**
 
@@ -486,7 +486,7 @@ Corporate clients là đối tác thanh toán, không phải khách hàng. Porta
 
 ### **9.1 Cơ sở pháp lý**
 
-Chuyển nhượng khoản phải thu theo Bộ luật Dân sự Điều 365-371. Khoản phải thu của SME được chuyển nhượng hợp pháp sang SPV do Dragon Capital kiểm soát. Đây là chuyển nhượng hoàn toàn, không phải cầm cố hay bảo lãnh. Nếu SME mất khả năng thanh toán, Dragon Capital có quyền đòi nợ trực tiếp từ corporate client.
+Chuyển nhượng khoản phải thu theo Bộ luật Dân sự Điều 365-371. Khoản phải thu của SME được chuyển nhượng hợp pháp sang SPV do X Capital kiểm soát. Đây là chuyển nhượng hoàn toàn, không phải cầm cố hay bảo lãnh. Nếu SME mất khả năng thanh toán, X Capital có quyền đòi nợ trực tiếp từ corporate client.
 
 Legal opinion từ YKVN hoặc Vilaf trước khi launch.
 
@@ -513,11 +513,11 @@ Yêu cầu ngân hàng đối tác:
 
 ### **9.4 Cấu trúc SPV**
 
-* SPV thành lập tại Việt Nam (công ty TNHH một thành viên thuộc Dragon Capital)  
+* SPV thành lập tại Việt Nam (công ty TNHH một thành viên thuộc X Capital)  
 * SPV là bên nhận chuyển nhượng hợp pháp của tất cả receivable  
 * SPV phát hành notes cho pool đầu tư (Senior, Mezzanine, Junior)  
 * Notes được tokenize thành ERC-1400 security token  
-* Dragon Capital nắm junior và điều hành SPV
+* X Capital nắm junior và điều hành SPV
 
 ---
 
@@ -619,15 +619,15 @@ Blockchain là hạ tầng, không phải sản phẩm cho SME. SME không bao g
 | Contract | Chức năng |
 | ----- | ----- |
 | `RevStreamToken.sol` | ERC-1400 token. Ba partition: SENIOR, MEZZANINE, JUNIOR. Transfer restriction qua whitelist registry. |
-| `WhitelistRegistry.sol` | Quản lý địa chỉ ví nhà đầu tư được phép. Chỉ admin Dragon Capital thêm/xóa. |
+| `WhitelistRegistry.sol` | Quản lý địa chỉ ví nhà đầu tư được phép. Chỉ admin X Capital thêm/xóa. |
 | `WaterfallController.sol` | Nhận USDC từ settlement, thực thi phân phối: Senior → Mezzanine → Junior. |
 | `InvoiceRegistry.sol` | On-chain record mỗi invoice: hash PDF (IPFS), giá trị, hash obligor, due date, trạng thái. |
 | `PoolLedger.sol` | Theo dõi pool state: receivable outstanding, tranche balances, phân phối tích lũy. |
 
 **Luồng settlement:**
 
-1. Corporate thanh toán vào virtual account (tiền mặt)  
-2. Ops team chuyển đổi sang USDC qua sàn đối tác (Phase 1 thủ công, Phase 2 tự động hóa)  
+1. Corporate thanh toán VND vào virtual account (ngân hàng đối tác)  
+2. Platform đổi VND → USDC tại spot rate; FX risk được hedge ở cấp pool, cost baked vào servicing fee (Phase 1 thủ công, Phase 2 tự động hóa)  
 3. USDC gửi đến `WaterfallController.sol`  
 4. Smart contract tự động thực thi waterfall  
 5. Phân phối ghi on-chain, nhà đầu tư xem trên Polygonscan
@@ -646,7 +646,7 @@ Smart contracts không deploy lên mainnet nếu chưa hoàn thành kiểm toán
 
 ### **11.5 Custody**
 
-* Ví tổng Dragon Capital: Fireblocks enterprise (MPC, không có người nắm khóa duy nhất)  
+* Ví tổng X Capital: Fireblocks enterprise (MPC, không có người nắm khóa duy nhất)  
 * Admin operations: multisig 3-of-5  
 * Token custodian: VPS hoặc SSI (theo yêu cầu regulatory)  
 * Nhà đầu tư tổ chức: Fireblocks hoặc Ledger Enterprise  
@@ -710,7 +710,7 @@ Smart contracts không deploy lên mainnet nếu chưa hoàn thành kiểm toán
 
 | Rủi ro | Xác suất | Tác động | Biện pháp |
 | ----- | ----- | ----- | ----- |
-| SME phá sản | Trung bình | Cao | Assignment of Receivables: Dragon Capital thu hồi thẳng từ corporate client |
+| SME phá sản | Trung bình | Cao | Assignment of Receivables: X Capital thu hồi thẳng từ corporate client |
 | Corporate client không thanh toán | Thấp | Cao | Pre-approve chỉ obligor investment-grade. Pool cap 15%/obligor. |
 | Gian lận invoice | Thấp | Cao | Hash deduplication, obligor acknowledgment ở Stage 3, audit sampling |
 | Default cluster một sub-sector | Trung bình | Cao | Cross-sub-sector concentration limit 30%, dynamic rebalancing |
@@ -961,13 +961,13 @@ Các mục dưới cần người phụ trách và deadline cụ thể trước 
 | ----- | ----- | ----- | ----- |
 | 1 | Ngân hàng đối tác virtual account: Techcombank vs. VPBank vs. BIDV? | Q1 2026 | Ops Lead |
 | 2 | SPV: một SPV cho tất cả pool hay riêng từng pool? | Q1 2026 | Legal |
-| 3 | Sandbox SBV: nộp theo Decree 94/2025 hay vận hành trong khung hiện tại và token sau? | Q1 2026 | Legal \+ Dragon Capital |
-| 4 | Bắt đầu với USD hay VND? USD đơn giản hóa blockchain settlement, VND mở rộng SME access. | Trước Pool 1 | Product Lead |
+| 3 | Sandbox SBV: nộp theo Decree 94/2025 hay vận hành trong khung hiện tại và token sau? | Q1 2026 | Legal \+ X Capital |
+| 4 | ~~Bắt đầu với USD hay VND?~~ **✅ Chốt:** SME và corporate client giao dịch hoàn toàn bằng VND. Platform convert VND→USDC nội bộ cho blockchain settlement. | ~~Trước Pool 1~~ | ~~Product Lead~~ |
 | 5 | Firm kiểm toán smart contract: Quantstamp, CertiK, Trail of Bits, hay đơn vị Việt Nam? | Q2 2026 trước launch | Tech Lead |
 | 6 | Corporate portal: build trong Phase 1 (2027) hay dùng email/PDF đến Phase 2? Đã chốt Phase 1 \- cần xác nhận scope chi tiết. | Q1 2027 | Product Lead |
-| 7 | USDC conversion: ai chịu FX risk giữa fiat collection và USDC cho settlement? | Trước Pool 1 | Finance |
+| 7 | ~~USDC conversion: ai chịu FX risk giữa fiat collection và USDC cho settlement?~~ **✅ Chốt:** Platform hedge FX ở cấp pool. Chi phí (~20–40bps/năm) hấp thụ vào servicing fee 1%/năm. SME không chịu FX risk, không có phụ phí trên invoice. | ~~Trước Pool 1~~ | ~~Finance~~ |
 | 8 | Investor portal: tự build hay white-label (Tokeny, Securitize)? | Q3 2026 | Tech Lead |
-| 9 | FX hedging cho 40% pool USD-revenue SMEs: hedge ở cấp pool hay passthrough SME? | Trước Pool 1 | Finance \+ Credit |
+| 9 | ~~FX hedging cho 40% pool USD-revenue SMEs: hedge ở cấp pool hay passthrough SME?~~ **✅ Chốt:** Hedge ở cấp pool, cost baked vào servicing fee. Không passthrough SME. | ~~Trước Pool 1~~ | ~~Finance \+ Credit~~ |
 | 10 | Figma prototype: bao nhiêu màn hình, flow nào ưu tiên cho 10 phút demo? | Chuẩn bị thi | Product Lead |
 
 ---
